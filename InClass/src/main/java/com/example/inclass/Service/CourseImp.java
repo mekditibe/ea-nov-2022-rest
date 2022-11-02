@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
-public class CourseImp extends CourseRepo implements CourseInt {
+public class CourseImp implements CourseInt {
 
     @Autowired
     private CourseRepo courseRepo;
@@ -17,7 +17,6 @@ public class CourseImp extends CourseRepo implements CourseInt {
         courseRepo.addCourse(course);
     }
 
-    @Override
     public void editCourse(int courseId, Course course) {
 //        Course obj =courseRepo.getCourseById(courseId);
         courseRepo.deleteCourse(courseId);

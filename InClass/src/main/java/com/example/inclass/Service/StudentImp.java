@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
-public class StudentImp extends StudentRepo implements StudentInt {
+public class StudentImp implements StudentInt {
 
     @Autowired
     private StudentRepo studentRepo;
